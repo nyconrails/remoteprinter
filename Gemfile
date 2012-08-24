@@ -11,8 +11,6 @@ gem "inherited_resources"
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "friendly_id", "~> 4.0.1"
 gem "gon"
-gem 'omniauth-facebook', '1.4.0'
-gem 'mobile-fu'
 gem "therubyracer", :require => 'v8'
 
 
