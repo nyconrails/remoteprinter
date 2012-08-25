@@ -1,0 +1,9 @@
+%h1 Login
+= simple_form_for :session, :url => sessions_path do |f|
+  = f.input :email
+  = f.input :password
+  = f.submit
+
+%p
+  or
+  = link_to 'signup', registration_path
