@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  printer_id: 1
+  user_id: 1
+  job_type_id: 1
+  status: MyString
+  is_complete: false
+  pages: 1
+
+two:
+  name: MyString
+  printer_id: 1
+  user_id: 1
+  job_type_id: 1
+  status: MyString
+  is_complete: false
+  pages: 1

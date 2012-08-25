@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120825173424) do
+ActiveRecord::Schema.define(:version => 20120825174216) do
+
+  create_table "jobs", :force => true do |t|
+    t.string   "name"
+    t.integer  "printer_id"
+    t.integer  "user_id"
+    t.integer  "job_type_id"
+    t.string   "status"
+    t.boolean  "is_complete"
+    t.integer  "pages"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "transactions", :force => true do |t|
     t.float    "amount"
