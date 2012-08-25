@@ -1,0 +1,16 @@
+%h1 Dashboard
+%h2 Recent Jobs
+- if current_user.jobs.any?
+  %ul
+    - current_user.jobs.last(5).each do |job|
+      %li= job.name
+- else
+  %p You haven't placed a job yet!
+  
+%h2 Recent Transactions
+- if current_user.transactions.any?
+  %ul
+    - current_user.transactions.last(5).each do |transaction|
+      %li= transaction.amount
+- else
+  %p You don't have any transactions yet!

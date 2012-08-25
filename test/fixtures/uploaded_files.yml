@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  amazon_s3_id: 1
+  user_id: 1
+  file_type: MyString
+
+two:
+  name: MyString
+  amazon_s3_id: 1
+  user_id: 1
+  file_type: MyString
