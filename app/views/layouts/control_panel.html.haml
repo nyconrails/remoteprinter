@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Blackswirl
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+    %ul
+      %li= link_to 'Logout', logout_path
+      %li= link_to 'Jobs', jobs_path
+      %li= link_to 'Printers', printers_path
+      %li= link_to 'Transactions', transactions_path
+      %li= link_to 'Settings', ''
+      %li= link_to 'Uploaded Files', uploaded_files_path
+    
+    = yield

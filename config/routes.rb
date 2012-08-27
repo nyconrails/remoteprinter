@@ -11,11 +11,13 @@ Remoteprinter::Application.routes.draw do
   resources :printers, :only => [:index, :show]
   resources :transactions, :only => [:index, :show]
   resources :jobs, :only => [:index, :show]
+  resources :uploaded_files, :only => [:index, :show]
 
   # dashboard
   match '/dashboard' => 'dashboard#index', :as => :dashboard
   
-  # public root
+  # public pages
+  match '/how_it_works' => 'public#how_it_works'
   root :to => 'public#index'
   
 end
